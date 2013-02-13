@@ -26,6 +26,7 @@ public class EventsDataConverter implements DataConverter {
 	private static final Map<String,String> CATEGORIES = new HashMap<String, String>();
 	static {
 		CATEGORIES.put("Mostra", "Exhibitions");
+		CATEGORIES.put("Mostra Fotografica", "Exhibitions");
 		CATEGORIES.put("Musica", "Concerts");
 		CATEGORIES.put("Musica classica", "Concerts");
 		CATEGORIES.put("Musica lirica", "Concerts");
