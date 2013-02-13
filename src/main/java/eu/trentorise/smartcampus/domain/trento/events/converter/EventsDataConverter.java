@@ -29,7 +29,7 @@ public class EventsDataConverter implements DataConverter {
 		CATEGORIES.put("Musica", "Concerts");
 		CATEGORIES.put("Musica classica", "Concerts");
 		CATEGORIES.put("Musica lirica", "Concerts");
-		CATEGORIES.put("Manifestazioni ed eventi", "Manifestations");
+//		CATEGORIES.put("Manifestazioni ed eventi", "Manifestations");
 		CATEGORIES.put("Convegno", "Seminars");
 		CATEGORIES.put("Cinema", "Movies");
 		CATEGORIES.put("Teatro", "Theaters");
