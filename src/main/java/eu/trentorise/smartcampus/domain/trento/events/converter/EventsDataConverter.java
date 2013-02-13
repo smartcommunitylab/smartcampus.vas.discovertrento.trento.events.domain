@@ -95,7 +95,7 @@ public class EventsDataConverter implements DataConverter {
 		}
 		if (ev.hasPrice()) {
 			if (descr.length() > 0) descr.append("<br/>");
-			descr.append("Price: ");
+			descr.append("Costo: ");
 			descr.append(ev.getPrice());
 		}
 		if (ev.hasOrganization()) {
