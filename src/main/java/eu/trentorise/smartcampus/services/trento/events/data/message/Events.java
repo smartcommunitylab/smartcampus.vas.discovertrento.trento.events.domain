@@ -1498,78 +1498,82 @@ public final class Events {
   public interface TCEventOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required string title = 1;
+    // required string id = 1;
+    boolean hasId();
+    String getId();
+    
+    // required string title = 2;
     boolean hasTitle();
     String getTitle();
     
-    // repeated string dateFrom = 2;
+    // repeated string dateFrom = 3;
     java.util.List<String> getDateFromList();
     int getDateFromCount();
     String getDateFrom(int index);
     
-    // repeated string dateTo = 3;
+    // repeated string dateTo = 4;
     java.util.List<String> getDateToList();
     int getDateToCount();
     String getDateTo(int index);
     
-    // required string place = 4;
+    // required string place = 5;
     boolean hasPlace();
     String getPlace();
     
-    // required string city = 5;
+    // required string city = 6;
     boolean hasCity();
     String getCity();
     
-    // required string time = 6;
+    // required string time = 7;
     boolean hasTime();
     String getTime();
     
-    // optional string address = 7;
+    // optional string address = 8;
     boolean hasAddress();
     String getAddress();
     
-    // optional string category = 8;
+    // optional string category = 9;
     boolean hasCategory();
     String getCategory();
     
-    // optional string details = 9;
+    // optional string details = 10;
     boolean hasDetails();
     String getDetails();
     
-    // optional string tel = 10;
+    // optional string tel = 11;
     boolean hasTel();
     String getTel();
     
-    // optional string fax = 11;
+    // optional string fax = 12;
     boolean hasFax();
     String getFax();
     
-    // optional string mail = 12;
+    // optional string mail = 13;
     boolean hasMail();
     String getMail();
     
-    // optional string www = 13;
+    // optional string www = 14;
     boolean hasWww();
     String getWww();
     
-    // optional string price = 14;
+    // optional string price = 15;
     boolean hasPrice();
     String getPrice();
     
-    // optional string organization = 15;
+    // optional string organization = 16;
     boolean hasOrganization();
     String getOrganization();
     
-    // optional string notes = 16;
+    // optional string notes = 17;
     boolean hasNotes();
     String getNotes();
     
-    // optional .it.sayservice.platform.core.message.POI poi = 17;
+    // optional .it.sayservice.platform.core.message.POI poi = 18;
     boolean hasPoi();
     it.sayservice.platform.core.message.Core.POI getPoi();
     it.sayservice.platform.core.message.Core.POIOrBuilder getPoiOrBuilder();
     
-    // optional string eventDate = 18;
+    // optional string eventDate = 19;
     boolean hasEventDate();
     String getEventDate();
   }
@@ -1602,11 +1606,43 @@ public final class Events {
     }
     
     private int bitField0_;
-    // required string title = 1;
-    public static final int TITLE_FIELD_NUMBER = 1;
+    // required string id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private java.lang.Object id_;
+    public boolean hasId() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          id_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string title = 2;
+    public static final int TITLE_FIELD_NUMBER = 2;
     private java.lang.Object title_;
     public boolean hasTitle() {
-      return ((bitField0_ & 0x00000001) == 0x00000001);
+      return ((bitField0_ & 0x00000002) == 0x00000002);
     }
     public String getTitle() {
       java.lang.Object ref = title_;
@@ -1634,8 +1670,8 @@ public final class Events {
       }
     }
     
-    // repeated string dateFrom = 2;
-    public static final int DATEFROM_FIELD_NUMBER = 2;
+    // repeated string dateFrom = 3;
+    public static final int DATEFROM_FIELD_NUMBER = 3;
     private com.google.protobuf.LazyStringList dateFrom_;
     public java.util.List<String>
         getDateFromList() {
@@ -1648,8 +1684,8 @@ public final class Events {
       return dateFrom_.get(index);
     }
     
-    // repeated string dateTo = 3;
-    public static final int DATETO_FIELD_NUMBER = 3;
+    // repeated string dateTo = 4;
+    public static final int DATETO_FIELD_NUMBER = 4;
     private com.google.protobuf.LazyStringList dateTo_;
     public java.util.List<String>
         getDateToList() {
@@ -1662,11 +1698,11 @@ public final class Events {
       return dateTo_.get(index);
     }
     
-    // required string place = 4;
-    public static final int PLACE_FIELD_NUMBER = 4;
+    // required string place = 5;
+    public static final int PLACE_FIELD_NUMBER = 5;
     private java.lang.Object place_;
     public boolean hasPlace() {
-      return ((bitField0_ & 0x00000002) == 0x00000002);
+      return ((bitField0_ & 0x00000004) == 0x00000004);
     }
     public String getPlace() {
       java.lang.Object ref = place_;
@@ -1694,11 +1730,11 @@ public final class Events {
       }
     }
     
-    // required string city = 5;
-    public static final int CITY_FIELD_NUMBER = 5;
+    // required string city = 6;
+    public static final int CITY_FIELD_NUMBER = 6;
     private java.lang.Object city_;
     public boolean hasCity() {
-      return ((bitField0_ & 0x00000004) == 0x00000004);
+      return ((bitField0_ & 0x00000008) == 0x00000008);
     }
     public String getCity() {
       java.lang.Object ref = city_;
@@ -1726,11 +1762,11 @@ public final class Events {
       }
     }
     
-    // required string time = 6;
-    public static final int TIME_FIELD_NUMBER = 6;
+    // required string time = 7;
+    public static final int TIME_FIELD_NUMBER = 7;
     private java.lang.Object time_;
     public boolean hasTime() {
-      return ((bitField0_ & 0x00000008) == 0x00000008);
+      return ((bitField0_ & 0x00000010) == 0x00000010);
     }
     public String getTime() {
       java.lang.Object ref = time_;
@@ -1758,11 +1794,11 @@ public final class Events {
       }
     }
     
-    // optional string address = 7;
-    public static final int ADDRESS_FIELD_NUMBER = 7;
+    // optional string address = 8;
+    public static final int ADDRESS_FIELD_NUMBER = 8;
     private java.lang.Object address_;
     public boolean hasAddress() {
-      return ((bitField0_ & 0x00000010) == 0x00000010);
+      return ((bitField0_ & 0x00000020) == 0x00000020);
     }
     public String getAddress() {
       java.lang.Object ref = address_;
@@ -1790,11 +1826,11 @@ public final class Events {
       }
     }
     
-    // optional string category = 8;
-    public static final int CATEGORY_FIELD_NUMBER = 8;
+    // optional string category = 9;
+    public static final int CATEGORY_FIELD_NUMBER = 9;
     private java.lang.Object category_;
     public boolean hasCategory() {
-      return ((bitField0_ & 0x00000020) == 0x00000020);
+      return ((bitField0_ & 0x00000040) == 0x00000040);
     }
     public String getCategory() {
       java.lang.Object ref = category_;
@@ -1822,11 +1858,11 @@ public final class Events {
       }
     }
     
-    // optional string details = 9;
-    public static final int DETAILS_FIELD_NUMBER = 9;
+    // optional string details = 10;
+    public static final int DETAILS_FIELD_NUMBER = 10;
     private java.lang.Object details_;
     public boolean hasDetails() {
-      return ((bitField0_ & 0x00000040) == 0x00000040);
+      return ((bitField0_ & 0x00000080) == 0x00000080);
     }
     public String getDetails() {
       java.lang.Object ref = details_;
@@ -1854,11 +1890,11 @@ public final class Events {
       }
     }
     
-    // optional string tel = 10;
-    public static final int TEL_FIELD_NUMBER = 10;
+    // optional string tel = 11;
+    public static final int TEL_FIELD_NUMBER = 11;
     private java.lang.Object tel_;
     public boolean hasTel() {
-      return ((bitField0_ & 0x00000080) == 0x00000080);
+      return ((bitField0_ & 0x00000100) == 0x00000100);
     }
     public String getTel() {
       java.lang.Object ref = tel_;
@@ -1886,11 +1922,11 @@ public final class Events {
       }
     }
     
-    // optional string fax = 11;
-    public static final int FAX_FIELD_NUMBER = 11;
+    // optional string fax = 12;
+    public static final int FAX_FIELD_NUMBER = 12;
     private java.lang.Object fax_;
     public boolean hasFax() {
-      return ((bitField0_ & 0x00000100) == 0x00000100);
+      return ((bitField0_ & 0x00000200) == 0x00000200);
     }
     public String getFax() {
       java.lang.Object ref = fax_;
@@ -1918,11 +1954,11 @@ public final class Events {
       }
     }
     
-    // optional string mail = 12;
-    public static final int MAIL_FIELD_NUMBER = 12;
+    // optional string mail = 13;
+    public static final int MAIL_FIELD_NUMBER = 13;
     private java.lang.Object mail_;
     public boolean hasMail() {
-      return ((bitField0_ & 0x00000200) == 0x00000200);
+      return ((bitField0_ & 0x00000400) == 0x00000400);
     }
     public String getMail() {
       java.lang.Object ref = mail_;
@@ -1950,11 +1986,11 @@ public final class Events {
       }
     }
     
-    // optional string www = 13;
-    public static final int WWW_FIELD_NUMBER = 13;
+    // optional string www = 14;
+    public static final int WWW_FIELD_NUMBER = 14;
     private java.lang.Object www_;
     public boolean hasWww() {
-      return ((bitField0_ & 0x00000400) == 0x00000400);
+      return ((bitField0_ & 0x00000800) == 0x00000800);
     }
     public String getWww() {
       java.lang.Object ref = www_;
@@ -1982,11 +2018,11 @@ public final class Events {
       }
     }
     
-    // optional string price = 14;
-    public static final int PRICE_FIELD_NUMBER = 14;
+    // optional string price = 15;
+    public static final int PRICE_FIELD_NUMBER = 15;
     private java.lang.Object price_;
     public boolean hasPrice() {
-      return ((bitField0_ & 0x00000800) == 0x00000800);
+      return ((bitField0_ & 0x00001000) == 0x00001000);
     }
     public String getPrice() {
       java.lang.Object ref = price_;
@@ -2014,11 +2050,11 @@ public final class Events {
       }
     }
     
-    // optional string organization = 15;
-    public static final int ORGANIZATION_FIELD_NUMBER = 15;
+    // optional string organization = 16;
+    public static final int ORGANIZATION_FIELD_NUMBER = 16;
     private java.lang.Object organization_;
     public boolean hasOrganization() {
-      return ((bitField0_ & 0x00001000) == 0x00001000);
+      return ((bitField0_ & 0x00002000) == 0x00002000);
     }
     public String getOrganization() {
       java.lang.Object ref = organization_;
@@ -2046,11 +2082,11 @@ public final class Events {
       }
     }
     
-    // optional string notes = 16;
-    public static final int NOTES_FIELD_NUMBER = 16;
+    // optional string notes = 17;
+    public static final int NOTES_FIELD_NUMBER = 17;
     private java.lang.Object notes_;
     public boolean hasNotes() {
-      return ((bitField0_ & 0x00002000) == 0x00002000);
+      return ((bitField0_ & 0x00004000) == 0x00004000);
     }
     public String getNotes() {
       java.lang.Object ref = notes_;
@@ -2078,11 +2114,11 @@ public final class Events {
       }
     }
     
-    // optional .it.sayservice.platform.core.message.POI poi = 17;
-    public static final int POI_FIELD_NUMBER = 17;
+    // optional .it.sayservice.platform.core.message.POI poi = 18;
+    public static final int POI_FIELD_NUMBER = 18;
     private it.sayservice.platform.core.message.Core.POI poi_;
     public boolean hasPoi() {
-      return ((bitField0_ & 0x00004000) == 0x00004000);
+      return ((bitField0_ & 0x00008000) == 0x00008000);
     }
     public it.sayservice.platform.core.message.Core.POI getPoi() {
       return poi_;
@@ -2091,11 +2127,11 @@ public final class Events {
       return poi_;
     }
     
-    // optional string eventDate = 18;
-    public static final int EVENTDATE_FIELD_NUMBER = 18;
+    // optional string eventDate = 19;
+    public static final int EVENTDATE_FIELD_NUMBER = 19;
     private java.lang.Object eventDate_;
     public boolean hasEventDate() {
-      return ((bitField0_ & 0x00008000) == 0x00008000);
+      return ((bitField0_ & 0x00010000) == 0x00010000);
     }
     public String getEventDate() {
       java.lang.Object ref = eventDate_;
@@ -2124,6 +2160,7 @@ public final class Events {
     }
     
     private void initFields() {
+      id_ = "";
       title_ = "";
       dateFrom_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       dateTo_ = com.google.protobuf.LazyStringArrayList.EMPTY;
@@ -2148,6 +2185,10 @@ public final class Events {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
+      if (!hasId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
       if (!hasTitle()) {
         memoizedIsInitialized = 0;
         return false;
@@ -2178,58 +2219,61 @@ public final class Events {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeBytes(1, getTitleBytes());
-      }
-      for (int i = 0; i < dateFrom_.size(); i++) {
-        output.writeBytes(2, dateFrom_.getByteString(i));
-      }
-      for (int i = 0; i < dateTo_.size(); i++) {
-        output.writeBytes(3, dateTo_.getByteString(i));
+        output.writeBytes(1, getIdBytes());
       }
       if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        output.writeBytes(4, getPlaceBytes());
+        output.writeBytes(2, getTitleBytes());
+      }
+      for (int i = 0; i < dateFrom_.size(); i++) {
+        output.writeBytes(3, dateFrom_.getByteString(i));
+      }
+      for (int i = 0; i < dateTo_.size(); i++) {
+        output.writeBytes(4, dateTo_.getByteString(i));
       }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
-        output.writeBytes(5, getCityBytes());
+        output.writeBytes(5, getPlaceBytes());
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
-        output.writeBytes(6, getTimeBytes());
+        output.writeBytes(6, getCityBytes());
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
-        output.writeBytes(7, getAddressBytes());
+        output.writeBytes(7, getTimeBytes());
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
-        output.writeBytes(8, getCategoryBytes());
+        output.writeBytes(8, getAddressBytes());
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
-        output.writeBytes(9, getDetailsBytes());
+        output.writeBytes(9, getCategoryBytes());
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
-        output.writeBytes(10, getTelBytes());
+        output.writeBytes(10, getDetailsBytes());
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
-        output.writeBytes(11, getFaxBytes());
+        output.writeBytes(11, getTelBytes());
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
-        output.writeBytes(12, getMailBytes());
+        output.writeBytes(12, getFaxBytes());
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
-        output.writeBytes(13, getWwwBytes());
+        output.writeBytes(13, getMailBytes());
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
-        output.writeBytes(14, getPriceBytes());
+        output.writeBytes(14, getWwwBytes());
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
-        output.writeBytes(15, getOrganizationBytes());
+        output.writeBytes(15, getPriceBytes());
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
-        output.writeBytes(16, getNotesBytes());
+        output.writeBytes(16, getOrganizationBytes());
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
-        output.writeMessage(17, poi_);
+        output.writeBytes(17, getNotesBytes());
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
-        output.writeBytes(18, getEventDateBytes());
+        output.writeMessage(18, poi_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        output.writeBytes(19, getEventDateBytes());
       }
       getUnknownFields().writeTo(output);
     }
@@ -2242,7 +2286,11 @@ public final class Events {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(1, getTitleBytes());
+          .computeBytesSize(1, getIdBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getTitleBytes());
       }
       {
         int dataSize = 0;
@@ -2262,65 +2310,65 @@ public final class Events {
         size += dataSize;
         size += 1 * getDateToList().size();
       }
-      if (((bitField0_ & 0x00000002) == 0x00000002)) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(4, getPlaceBytes());
-      }
       if (((bitField0_ & 0x00000004) == 0x00000004)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(5, getCityBytes());
+          .computeBytesSize(5, getPlaceBytes());
       }
       if (((bitField0_ & 0x00000008) == 0x00000008)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(6, getTimeBytes());
+          .computeBytesSize(6, getCityBytes());
       }
       if (((bitField0_ & 0x00000010) == 0x00000010)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(7, getAddressBytes());
+          .computeBytesSize(7, getTimeBytes());
       }
       if (((bitField0_ & 0x00000020) == 0x00000020)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(8, getCategoryBytes());
+          .computeBytesSize(8, getAddressBytes());
       }
       if (((bitField0_ & 0x00000040) == 0x00000040)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(9, getDetailsBytes());
+          .computeBytesSize(9, getCategoryBytes());
       }
       if (((bitField0_ & 0x00000080) == 0x00000080)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(10, getTelBytes());
+          .computeBytesSize(10, getDetailsBytes());
       }
       if (((bitField0_ & 0x00000100) == 0x00000100)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(11, getFaxBytes());
+          .computeBytesSize(11, getTelBytes());
       }
       if (((bitField0_ & 0x00000200) == 0x00000200)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(12, getMailBytes());
+          .computeBytesSize(12, getFaxBytes());
       }
       if (((bitField0_ & 0x00000400) == 0x00000400)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(13, getWwwBytes());
+          .computeBytesSize(13, getMailBytes());
       }
       if (((bitField0_ & 0x00000800) == 0x00000800)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(14, getPriceBytes());
+          .computeBytesSize(14, getWwwBytes());
       }
       if (((bitField0_ & 0x00001000) == 0x00001000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(15, getOrganizationBytes());
+          .computeBytesSize(15, getPriceBytes());
       }
       if (((bitField0_ & 0x00002000) == 0x00002000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(16, getNotesBytes());
+          .computeBytesSize(16, getOrganizationBytes());
       }
       if (((bitField0_ & 0x00004000) == 0x00004000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(17, poi_);
+          .computeBytesSize(17, getNotesBytes());
       }
       if (((bitField0_ & 0x00008000) == 0x00008000)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBytesSize(18, getEventDateBytes());
+          .computeMessageSize(18, poi_);
+      }
+      if (((bitField0_ & 0x00010000) == 0x00010000)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(19, getEventDateBytes());
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -2447,46 +2495,48 @@ public final class Events {
       
       public Builder clear() {
         super.clear();
-        title_ = "";
+        id_ = "";
         bitField0_ = (bitField0_ & ~0x00000001);
-        dateFrom_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        title_ = "";
         bitField0_ = (bitField0_ & ~0x00000002);
-        dateTo_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        dateFrom_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000004);
-        place_ = "";
+        dateTo_ = com.google.protobuf.LazyStringArrayList.EMPTY;
         bitField0_ = (bitField0_ & ~0x00000008);
-        city_ = "";
+        place_ = "";
         bitField0_ = (bitField0_ & ~0x00000010);
-        time_ = "";
+        city_ = "";
         bitField0_ = (bitField0_ & ~0x00000020);
-        address_ = "";
+        time_ = "";
         bitField0_ = (bitField0_ & ~0x00000040);
-        category_ = "";
+        address_ = "";
         bitField0_ = (bitField0_ & ~0x00000080);
-        details_ = "";
+        category_ = "";
         bitField0_ = (bitField0_ & ~0x00000100);
-        tel_ = "";
+        details_ = "";
         bitField0_ = (bitField0_ & ~0x00000200);
-        fax_ = "";
+        tel_ = "";
         bitField0_ = (bitField0_ & ~0x00000400);
-        mail_ = "";
+        fax_ = "";
         bitField0_ = (bitField0_ & ~0x00000800);
-        www_ = "";
+        mail_ = "";
         bitField0_ = (bitField0_ & ~0x00001000);
-        price_ = "";
+        www_ = "";
         bitField0_ = (bitField0_ & ~0x00002000);
-        organization_ = "";
+        price_ = "";
         bitField0_ = (bitField0_ & ~0x00004000);
-        notes_ = "";
+        organization_ = "";
         bitField0_ = (bitField0_ & ~0x00008000);
+        notes_ = "";
+        bitField0_ = (bitField0_ & ~0x00010000);
         if (poiBuilder_ == null) {
           poi_ = it.sayservice.platform.core.message.Core.POI.getDefaultInstance();
         } else {
           poiBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00010000);
-        eventDate_ = "";
         bitField0_ = (bitField0_ & ~0x00020000);
+        eventDate_ = "";
+        bitField0_ = (bitField0_ & ~0x00040000);
         return this;
       }
       
@@ -2528,81 +2578,85 @@ public final class Events {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.title_ = title_;
-        if (((bitField0_ & 0x00000002) == 0x00000002)) {
-          dateFrom_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              dateFrom_);
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.dateFrom_ = dateFrom_;
-        if (((bitField0_ & 0x00000004) == 0x00000004)) {
-          dateTo_ = new com.google.protobuf.UnmodifiableLazyStringList(
-              dateTo_);
-          bitField0_ = (bitField0_ & ~0x00000004);
-        }
-        result.dateTo_ = dateTo_;
-        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
           to_bitField0_ |= 0x00000002;
         }
-        result.place_ = place_;
+        result.title_ = title_;
+        if (((bitField0_ & 0x00000004) == 0x00000004)) {
+          dateFrom_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              dateFrom_);
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.dateFrom_ = dateFrom_;
+        if (((bitField0_ & 0x00000008) == 0x00000008)) {
+          dateTo_ = new com.google.protobuf.UnmodifiableLazyStringList(
+              dateTo_);
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.dateTo_ = dateTo_;
         if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
           to_bitField0_ |= 0x00000004;
         }
-        result.city_ = city_;
+        result.place_ = place_;
         if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
           to_bitField0_ |= 0x00000008;
         }
-        result.time_ = time_;
+        result.city_ = city_;
         if (((from_bitField0_ & 0x00000040) == 0x00000040)) {
           to_bitField0_ |= 0x00000010;
         }
-        result.address_ = address_;
+        result.time_ = time_;
         if (((from_bitField0_ & 0x00000080) == 0x00000080)) {
           to_bitField0_ |= 0x00000020;
         }
-        result.category_ = category_;
+        result.address_ = address_;
         if (((from_bitField0_ & 0x00000100) == 0x00000100)) {
           to_bitField0_ |= 0x00000040;
         }
-        result.details_ = details_;
+        result.category_ = category_;
         if (((from_bitField0_ & 0x00000200) == 0x00000200)) {
           to_bitField0_ |= 0x00000080;
         }
-        result.tel_ = tel_;
+        result.details_ = details_;
         if (((from_bitField0_ & 0x00000400) == 0x00000400)) {
           to_bitField0_ |= 0x00000100;
         }
-        result.fax_ = fax_;
+        result.tel_ = tel_;
         if (((from_bitField0_ & 0x00000800) == 0x00000800)) {
           to_bitField0_ |= 0x00000200;
         }
-        result.mail_ = mail_;
+        result.fax_ = fax_;
         if (((from_bitField0_ & 0x00001000) == 0x00001000)) {
           to_bitField0_ |= 0x00000400;
         }
-        result.www_ = www_;
+        result.mail_ = mail_;
         if (((from_bitField0_ & 0x00002000) == 0x00002000)) {
           to_bitField0_ |= 0x00000800;
         }
-        result.price_ = price_;
+        result.www_ = www_;
         if (((from_bitField0_ & 0x00004000) == 0x00004000)) {
           to_bitField0_ |= 0x00001000;
         }
-        result.organization_ = organization_;
+        result.price_ = price_;
         if (((from_bitField0_ & 0x00008000) == 0x00008000)) {
           to_bitField0_ |= 0x00002000;
         }
-        result.notes_ = notes_;
+        result.organization_ = organization_;
         if (((from_bitField0_ & 0x00010000) == 0x00010000)) {
           to_bitField0_ |= 0x00004000;
+        }
+        result.notes_ = notes_;
+        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
+          to_bitField0_ |= 0x00008000;
         }
         if (poiBuilder_ == null) {
           result.poi_ = poi_;
         } else {
           result.poi_ = poiBuilder_.build();
         }
-        if (((from_bitField0_ & 0x00020000) == 0x00020000)) {
-          to_bitField0_ |= 0x00008000;
+        if (((from_bitField0_ & 0x00040000) == 0x00040000)) {
+          to_bitField0_ |= 0x00010000;
         }
         result.eventDate_ = eventDate_;
         result.bitField0_ = to_bitField0_;
@@ -2621,13 +2675,16 @@ public final class Events {
       
       public Builder mergeFrom(eu.trentorise.smartcampus.services.trento.events.data.message.Events.TCEvent other) {
         if (other == eu.trentorise.smartcampus.services.trento.events.data.message.Events.TCEvent.getDefaultInstance()) return this;
+        if (other.hasId()) {
+          setId(other.getId());
+        }
         if (other.hasTitle()) {
           setTitle(other.getTitle());
         }
         if (!other.dateFrom_.isEmpty()) {
           if (dateFrom_.isEmpty()) {
             dateFrom_ = other.dateFrom_;
-            bitField0_ = (bitField0_ & ~0x00000002);
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureDateFromIsMutable();
             dateFrom_.addAll(other.dateFrom_);
@@ -2637,7 +2694,7 @@ public final class Events {
         if (!other.dateTo_.isEmpty()) {
           if (dateTo_.isEmpty()) {
             dateTo_ = other.dateTo_;
-            bitField0_ = (bitField0_ & ~0x00000004);
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensureDateToIsMutable();
             dateTo_.addAll(other.dateTo_);
@@ -2694,6 +2751,10 @@ public final class Events {
       }
       
       public final boolean isInitialized() {
+        if (!hasId()) {
+          
+          return false;
+        }
         if (!hasTitle()) {
           
           return false;
@@ -2744,85 +2805,90 @@ public final class Events {
             }
             case 10: {
               bitField0_ |= 0x00000001;
-              title_ = input.readBytes();
+              id_ = input.readBytes();
               break;
             }
             case 18: {
+              bitField0_ |= 0x00000002;
+              title_ = input.readBytes();
+              break;
+            }
+            case 26: {
               ensureDateFromIsMutable();
               dateFrom_.add(input.readBytes());
               break;
             }
-            case 26: {
+            case 34: {
               ensureDateToIsMutable();
               dateTo_.add(input.readBytes());
               break;
             }
-            case 34: {
-              bitField0_ |= 0x00000008;
-              place_ = input.readBytes();
-              break;
-            }
             case 42: {
               bitField0_ |= 0x00000010;
-              city_ = input.readBytes();
+              place_ = input.readBytes();
               break;
             }
             case 50: {
               bitField0_ |= 0x00000020;
-              time_ = input.readBytes();
+              city_ = input.readBytes();
               break;
             }
             case 58: {
               bitField0_ |= 0x00000040;
-              address_ = input.readBytes();
+              time_ = input.readBytes();
               break;
             }
             case 66: {
               bitField0_ |= 0x00000080;
-              category_ = input.readBytes();
+              address_ = input.readBytes();
               break;
             }
             case 74: {
               bitField0_ |= 0x00000100;
-              details_ = input.readBytes();
+              category_ = input.readBytes();
               break;
             }
             case 82: {
               bitField0_ |= 0x00000200;
-              tel_ = input.readBytes();
+              details_ = input.readBytes();
               break;
             }
             case 90: {
               bitField0_ |= 0x00000400;
-              fax_ = input.readBytes();
+              tel_ = input.readBytes();
               break;
             }
             case 98: {
               bitField0_ |= 0x00000800;
-              mail_ = input.readBytes();
+              fax_ = input.readBytes();
               break;
             }
             case 106: {
               bitField0_ |= 0x00001000;
-              www_ = input.readBytes();
+              mail_ = input.readBytes();
               break;
             }
             case 114: {
               bitField0_ |= 0x00002000;
-              price_ = input.readBytes();
+              www_ = input.readBytes();
               break;
             }
             case 122: {
               bitField0_ |= 0x00004000;
-              organization_ = input.readBytes();
+              price_ = input.readBytes();
               break;
             }
             case 130: {
               bitField0_ |= 0x00008000;
-              notes_ = input.readBytes();
+              organization_ = input.readBytes();
               break;
             }
             case 138: {
+              bitField0_ |= 0x00010000;
+              notes_ = input.readBytes();
+              break;
+            }
+            case 146: {
               it.sayservice.platform.core.message.Core.POI.Builder subBuilder = it.sayservice.platform.core.message.Core.POI.newBuilder();
               if (hasPoi()) {
                 subBuilder.mergeFrom(getPoi());
@@ -2831,8 +2897,8 @@ public final class Events {
               setPoi(subBuilder.buildPartial());
               break;
             }
-            case 146: {
-              bitField0_ |= 0x00020000;
+            case 154: {
+              bitField0_ |= 0x00040000;
               eventDate_ = input.readBytes();
               break;
             }
@@ -2842,10 +2908,46 @@ public final class Events {
       
       private int bitField0_;
       
-      // required string title = 1;
+      // required string id = 1;
+      private java.lang.Object id_ = "";
+      public boolean hasId() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setId(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      void setId(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000001;
+        id_ = value;
+        onChanged();
+      }
+      
+      // required string title = 2;
       private java.lang.Object title_ = "";
       public boolean hasTitle() {
-        return ((bitField0_ & 0x00000001) == 0x00000001);
+        return ((bitField0_ & 0x00000002) == 0x00000002);
       }
       public String getTitle() {
         java.lang.Object ref = title_;
@@ -2861,29 +2963,29 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000001;
+  bitField0_ |= 0x00000002;
         title_ = value;
         onChanged();
         return this;
       }
       public Builder clearTitle() {
-        bitField0_ = (bitField0_ & ~0x00000001);
+        bitField0_ = (bitField0_ & ~0x00000002);
         title_ = getDefaultInstance().getTitle();
         onChanged();
         return this;
       }
       void setTitle(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000001;
+        bitField0_ |= 0x00000002;
         title_ = value;
         onChanged();
       }
       
-      // repeated string dateFrom = 2;
+      // repeated string dateFrom = 3;
       private com.google.protobuf.LazyStringList dateFrom_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureDateFromIsMutable() {
-        if (!((bitField0_ & 0x00000002) == 0x00000002)) {
+        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
           dateFrom_ = new com.google.protobuf.LazyStringArrayList(dateFrom_);
-          bitField0_ |= 0x00000002;
+          bitField0_ |= 0x00000004;
          }
       }
       public java.util.List<String>
@@ -2924,7 +3026,7 @@ public final class Events {
       }
       public Builder clearDateFrom() {
         dateFrom_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000002);
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -2934,12 +3036,12 @@ public final class Events {
         onChanged();
       }
       
-      // repeated string dateTo = 3;
+      // repeated string dateTo = 4;
       private com.google.protobuf.LazyStringList dateTo_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureDateToIsMutable() {
-        if (!((bitField0_ & 0x00000004) == 0x00000004)) {
+        if (!((bitField0_ & 0x00000008) == 0x00000008)) {
           dateTo_ = new com.google.protobuf.LazyStringArrayList(dateTo_);
-          bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000008;
          }
       }
       public java.util.List<String>
@@ -2980,7 +3082,7 @@ public final class Events {
       }
       public Builder clearDateTo() {
         dateTo_ = com.google.protobuf.LazyStringArrayList.EMPTY;
-        bitField0_ = (bitField0_ & ~0x00000004);
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -2990,10 +3092,10 @@ public final class Events {
         onChanged();
       }
       
-      // required string place = 4;
+      // required string place = 5;
       private java.lang.Object place_ = "";
       public boolean hasPlace() {
-        return ((bitField0_ & 0x00000008) == 0x00000008);
+        return ((bitField0_ & 0x00000010) == 0x00000010);
       }
       public String getPlace() {
         java.lang.Object ref = place_;
@@ -3009,27 +3111,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000008;
+  bitField0_ |= 0x00000010;
         place_ = value;
         onChanged();
         return this;
       }
       public Builder clearPlace() {
-        bitField0_ = (bitField0_ & ~0x00000008);
+        bitField0_ = (bitField0_ & ~0x00000010);
         place_ = getDefaultInstance().getPlace();
         onChanged();
         return this;
       }
       void setPlace(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000008;
+        bitField0_ |= 0x00000010;
         place_ = value;
         onChanged();
       }
       
-      // required string city = 5;
+      // required string city = 6;
       private java.lang.Object city_ = "";
       public boolean hasCity() {
-        return ((bitField0_ & 0x00000010) == 0x00000010);
+        return ((bitField0_ & 0x00000020) == 0x00000020);
       }
       public String getCity() {
         java.lang.Object ref = city_;
@@ -3045,27 +3147,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000010;
+  bitField0_ |= 0x00000020;
         city_ = value;
         onChanged();
         return this;
       }
       public Builder clearCity() {
-        bitField0_ = (bitField0_ & ~0x00000010);
+        bitField0_ = (bitField0_ & ~0x00000020);
         city_ = getDefaultInstance().getCity();
         onChanged();
         return this;
       }
       void setCity(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000010;
+        bitField0_ |= 0x00000020;
         city_ = value;
         onChanged();
       }
       
-      // required string time = 6;
+      // required string time = 7;
       private java.lang.Object time_ = "";
       public boolean hasTime() {
-        return ((bitField0_ & 0x00000020) == 0x00000020);
+        return ((bitField0_ & 0x00000040) == 0x00000040);
       }
       public String getTime() {
         java.lang.Object ref = time_;
@@ -3081,27 +3183,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000020;
+  bitField0_ |= 0x00000040;
         time_ = value;
         onChanged();
         return this;
       }
       public Builder clearTime() {
-        bitField0_ = (bitField0_ & ~0x00000020);
+        bitField0_ = (bitField0_ & ~0x00000040);
         time_ = getDefaultInstance().getTime();
         onChanged();
         return this;
       }
       void setTime(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000020;
+        bitField0_ |= 0x00000040;
         time_ = value;
         onChanged();
       }
       
-      // optional string address = 7;
+      // optional string address = 8;
       private java.lang.Object address_ = "";
       public boolean hasAddress() {
-        return ((bitField0_ & 0x00000040) == 0x00000040);
+        return ((bitField0_ & 0x00000080) == 0x00000080);
       }
       public String getAddress() {
         java.lang.Object ref = address_;
@@ -3117,27 +3219,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000040;
+  bitField0_ |= 0x00000080;
         address_ = value;
         onChanged();
         return this;
       }
       public Builder clearAddress() {
-        bitField0_ = (bitField0_ & ~0x00000040);
+        bitField0_ = (bitField0_ & ~0x00000080);
         address_ = getDefaultInstance().getAddress();
         onChanged();
         return this;
       }
       void setAddress(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000040;
+        bitField0_ |= 0x00000080;
         address_ = value;
         onChanged();
       }
       
-      // optional string category = 8;
+      // optional string category = 9;
       private java.lang.Object category_ = "";
       public boolean hasCategory() {
-        return ((bitField0_ & 0x00000080) == 0x00000080);
+        return ((bitField0_ & 0x00000100) == 0x00000100);
       }
       public String getCategory() {
         java.lang.Object ref = category_;
@@ -3153,27 +3255,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000080;
+  bitField0_ |= 0x00000100;
         category_ = value;
         onChanged();
         return this;
       }
       public Builder clearCategory() {
-        bitField0_ = (bitField0_ & ~0x00000080);
+        bitField0_ = (bitField0_ & ~0x00000100);
         category_ = getDefaultInstance().getCategory();
         onChanged();
         return this;
       }
       void setCategory(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000080;
+        bitField0_ |= 0x00000100;
         category_ = value;
         onChanged();
       }
       
-      // optional string details = 9;
+      // optional string details = 10;
       private java.lang.Object details_ = "";
       public boolean hasDetails() {
-        return ((bitField0_ & 0x00000100) == 0x00000100);
+        return ((bitField0_ & 0x00000200) == 0x00000200);
       }
       public String getDetails() {
         java.lang.Object ref = details_;
@@ -3189,27 +3291,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000100;
+  bitField0_ |= 0x00000200;
         details_ = value;
         onChanged();
         return this;
       }
       public Builder clearDetails() {
-        bitField0_ = (bitField0_ & ~0x00000100);
+        bitField0_ = (bitField0_ & ~0x00000200);
         details_ = getDefaultInstance().getDetails();
         onChanged();
         return this;
       }
       void setDetails(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000100;
+        bitField0_ |= 0x00000200;
         details_ = value;
         onChanged();
       }
       
-      // optional string tel = 10;
+      // optional string tel = 11;
       private java.lang.Object tel_ = "";
       public boolean hasTel() {
-        return ((bitField0_ & 0x00000200) == 0x00000200);
+        return ((bitField0_ & 0x00000400) == 0x00000400);
       }
       public String getTel() {
         java.lang.Object ref = tel_;
@@ -3225,27 +3327,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000200;
+  bitField0_ |= 0x00000400;
         tel_ = value;
         onChanged();
         return this;
       }
       public Builder clearTel() {
-        bitField0_ = (bitField0_ & ~0x00000200);
+        bitField0_ = (bitField0_ & ~0x00000400);
         tel_ = getDefaultInstance().getTel();
         onChanged();
         return this;
       }
       void setTel(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000200;
+        bitField0_ |= 0x00000400;
         tel_ = value;
         onChanged();
       }
       
-      // optional string fax = 11;
+      // optional string fax = 12;
       private java.lang.Object fax_ = "";
       public boolean hasFax() {
-        return ((bitField0_ & 0x00000400) == 0x00000400);
+        return ((bitField0_ & 0x00000800) == 0x00000800);
       }
       public String getFax() {
         java.lang.Object ref = fax_;
@@ -3261,27 +3363,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000400;
+  bitField0_ |= 0x00000800;
         fax_ = value;
         onChanged();
         return this;
       }
       public Builder clearFax() {
-        bitField0_ = (bitField0_ & ~0x00000400);
+        bitField0_ = (bitField0_ & ~0x00000800);
         fax_ = getDefaultInstance().getFax();
         onChanged();
         return this;
       }
       void setFax(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000400;
+        bitField0_ |= 0x00000800;
         fax_ = value;
         onChanged();
       }
       
-      // optional string mail = 12;
+      // optional string mail = 13;
       private java.lang.Object mail_ = "";
       public boolean hasMail() {
-        return ((bitField0_ & 0x00000800) == 0x00000800);
+        return ((bitField0_ & 0x00001000) == 0x00001000);
       }
       public String getMail() {
         java.lang.Object ref = mail_;
@@ -3297,27 +3399,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00000800;
+  bitField0_ |= 0x00001000;
         mail_ = value;
         onChanged();
         return this;
       }
       public Builder clearMail() {
-        bitField0_ = (bitField0_ & ~0x00000800);
+        bitField0_ = (bitField0_ & ~0x00001000);
         mail_ = getDefaultInstance().getMail();
         onChanged();
         return this;
       }
       void setMail(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00000800;
+        bitField0_ |= 0x00001000;
         mail_ = value;
         onChanged();
       }
       
-      // optional string www = 13;
+      // optional string www = 14;
       private java.lang.Object www_ = "";
       public boolean hasWww() {
-        return ((bitField0_ & 0x00001000) == 0x00001000);
+        return ((bitField0_ & 0x00002000) == 0x00002000);
       }
       public String getWww() {
         java.lang.Object ref = www_;
@@ -3333,27 +3435,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00001000;
+  bitField0_ |= 0x00002000;
         www_ = value;
         onChanged();
         return this;
       }
       public Builder clearWww() {
-        bitField0_ = (bitField0_ & ~0x00001000);
+        bitField0_ = (bitField0_ & ~0x00002000);
         www_ = getDefaultInstance().getWww();
         onChanged();
         return this;
       }
       void setWww(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00001000;
+        bitField0_ |= 0x00002000;
         www_ = value;
         onChanged();
       }
       
-      // optional string price = 14;
+      // optional string price = 15;
       private java.lang.Object price_ = "";
       public boolean hasPrice() {
-        return ((bitField0_ & 0x00002000) == 0x00002000);
+        return ((bitField0_ & 0x00004000) == 0x00004000);
       }
       public String getPrice() {
         java.lang.Object ref = price_;
@@ -3369,27 +3471,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00002000;
+  bitField0_ |= 0x00004000;
         price_ = value;
         onChanged();
         return this;
       }
       public Builder clearPrice() {
-        bitField0_ = (bitField0_ & ~0x00002000);
+        bitField0_ = (bitField0_ & ~0x00004000);
         price_ = getDefaultInstance().getPrice();
         onChanged();
         return this;
       }
       void setPrice(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00002000;
+        bitField0_ |= 0x00004000;
         price_ = value;
         onChanged();
       }
       
-      // optional string organization = 15;
+      // optional string organization = 16;
       private java.lang.Object organization_ = "";
       public boolean hasOrganization() {
-        return ((bitField0_ & 0x00004000) == 0x00004000);
+        return ((bitField0_ & 0x00008000) == 0x00008000);
       }
       public String getOrganization() {
         java.lang.Object ref = organization_;
@@ -3405,27 +3507,27 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00004000;
+  bitField0_ |= 0x00008000;
         organization_ = value;
         onChanged();
         return this;
       }
       public Builder clearOrganization() {
-        bitField0_ = (bitField0_ & ~0x00004000);
+        bitField0_ = (bitField0_ & ~0x00008000);
         organization_ = getDefaultInstance().getOrganization();
         onChanged();
         return this;
       }
       void setOrganization(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00004000;
+        bitField0_ |= 0x00008000;
         organization_ = value;
         onChanged();
       }
       
-      // optional string notes = 16;
+      // optional string notes = 17;
       private java.lang.Object notes_ = "";
       public boolean hasNotes() {
-        return ((bitField0_ & 0x00008000) == 0x00008000);
+        return ((bitField0_ & 0x00010000) == 0x00010000);
       }
       public String getNotes() {
         java.lang.Object ref = notes_;
@@ -3441,29 +3543,29 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00008000;
+  bitField0_ |= 0x00010000;
         notes_ = value;
         onChanged();
         return this;
       }
       public Builder clearNotes() {
-        bitField0_ = (bitField0_ & ~0x00008000);
+        bitField0_ = (bitField0_ & ~0x00010000);
         notes_ = getDefaultInstance().getNotes();
         onChanged();
         return this;
       }
       void setNotes(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00008000;
+        bitField0_ |= 0x00010000;
         notes_ = value;
         onChanged();
       }
       
-      // optional .it.sayservice.platform.core.message.POI poi = 17;
+      // optional .it.sayservice.platform.core.message.POI poi = 18;
       private it.sayservice.platform.core.message.Core.POI poi_ = it.sayservice.platform.core.message.Core.POI.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
           it.sayservice.platform.core.message.Core.POI, it.sayservice.platform.core.message.Core.POI.Builder, it.sayservice.platform.core.message.Core.POIOrBuilder> poiBuilder_;
       public boolean hasPoi() {
-        return ((bitField0_ & 0x00010000) == 0x00010000);
+        return ((bitField0_ & 0x00020000) == 0x00020000);
       }
       public it.sayservice.platform.core.message.Core.POI getPoi() {
         if (poiBuilder_ == null) {
@@ -3482,7 +3584,7 @@ public final class Events {
         } else {
           poiBuilder_.setMessage(value);
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder setPoi(
@@ -3493,12 +3595,12 @@ public final class Events {
         } else {
           poiBuilder_.setMessage(builderForValue.build());
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder mergePoi(it.sayservice.platform.core.message.Core.POI value) {
         if (poiBuilder_ == null) {
-          if (((bitField0_ & 0x00010000) == 0x00010000) &&
+          if (((bitField0_ & 0x00020000) == 0x00020000) &&
               poi_ != it.sayservice.platform.core.message.Core.POI.getDefaultInstance()) {
             poi_ =
               it.sayservice.platform.core.message.Core.POI.newBuilder(poi_).mergeFrom(value).buildPartial();
@@ -3509,7 +3611,7 @@ public final class Events {
         } else {
           poiBuilder_.mergeFrom(value);
         }
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00020000;
         return this;
       }
       public Builder clearPoi() {
@@ -3519,11 +3621,11 @@ public final class Events {
         } else {
           poiBuilder_.clear();
         }
-        bitField0_ = (bitField0_ & ~0x00010000);
+        bitField0_ = (bitField0_ & ~0x00020000);
         return this;
       }
       public it.sayservice.platform.core.message.Core.POI.Builder getPoiBuilder() {
-        bitField0_ |= 0x00010000;
+        bitField0_ |= 0x00020000;
         onChanged();
         return getPoiFieldBuilder().getBuilder();
       }
@@ -3548,10 +3650,10 @@ public final class Events {
         return poiBuilder_;
       }
       
-      // optional string eventDate = 18;
+      // optional string eventDate = 19;
       private java.lang.Object eventDate_ = "";
       public boolean hasEventDate() {
-        return ((bitField0_ & 0x00020000) == 0x00020000);
+        return ((bitField0_ & 0x00040000) == 0x00040000);
       }
       public String getEventDate() {
         java.lang.Object ref = eventDate_;
@@ -3567,19 +3669,19 @@ public final class Events {
         if (value == null) {
     throw new NullPointerException();
   }
-  bitField0_ |= 0x00020000;
+  bitField0_ |= 0x00040000;
         eventDate_ = value;
         onChanged();
         return this;
       }
       public Builder clearEventDate() {
-        bitField0_ = (bitField0_ & ~0x00020000);
+        bitField0_ = (bitField0_ & ~0x00040000);
         eventDate_ = getDefaultInstance().getEventDate();
         onChanged();
         return this;
       }
       void setEventDate(com.google.protobuf.ByteString value) {
-        bitField0_ |= 0x00020000;
+        bitField0_ |= 0x00040000;
         eventDate_ = value;
         onChanged();
       }
@@ -6775,29 +6877,29 @@ public final class Events {
       "rento.events.data.message.TCEventDescr\"^" +
       "\n\014TCEventDescr\022\021\n\tstartDate\030\001 \002(\t\022\020\n\010cat" +
       "egory\030\002 \002(\t\022\r\n\005title\030\003 \002(\t\022\014\n\004link\030\004 \002(\t" +
-      "\022\014\n\004city\030\005 \002(\t\"\314\002\n\007TCEvent\022\r\n\005title\030\001 \002(" +
-      "\t\022\020\n\010dateFrom\030\002 \003(\t\022\016\n\006dateTo\030\003 \003(\t\022\r\n\005p",
-      "lace\030\004 \002(\t\022\014\n\004city\030\005 \002(\t\022\014\n\004time\030\006 \002(\t\022\017" +
-      "\n\007address\030\007 \001(\t\022\020\n\010category\030\010 \001(\t\022\017\n\007det" +
-      "ails\030\t \001(\t\022\013\n\003tel\030\n \001(\t\022\013\n\003fax\030\013 \001(\t\022\014\n\004" +
-      "mail\030\014 \001(\t\022\013\n\003www\030\r \001(\t\022\r\n\005price\030\016 \001(\t\022\024" +
-      "\n\014organization\030\017 \001(\t\022\r\n\005notes\030\020 \001(\t\0225\n\003p" +
-      "oi\030\021 \001(\0132(.it.sayservice.platform.core.m" +
-      "essage.POI\022\021\n\teventDate\030\022 \001(\t\"\314\001\n\016EventD" +
-      "escrList\022X\n\005event\030\001 \003(\0132I.eu.trentorise." +
-      "smartcampus.services.trento.events.data." +
-      "message.EventDescr\022`\n\rmanifestation\030\002 \003(",
-      "\0132I.eu.trentorise.smartcampus.services.t" +
-      "rento.events.data.message.EventDescr\">\n\n" +
-      "EventDescr\022\014\n\004href\030\001 \002(\t\022\017\n\007keyword\030\002 \002(" +
-      "\t\022\021\n\tshortDesc\030\003 \002(\t\"\221\002\n\005Event\022\n\n\002id\030\001 \002" +
-      "(\t\022\r\n\005title\030\002 \002(\t\022\014\n\004date\030\003 \002(\t\022\r\n\005place" +
-      "\030\004 \002(\t\022\014\n\004time\030\005 \002(\t\022\017\n\007content\030\006 \001(\t\022\022\n" +
-      "\nlastUpdate\030\010 \001(\t\022\013\n\003img\030\t \001(\t\022\020\n\010distri" +
-      "ct\030\n \001(\t\022\014\n\004cost\030\013 \001(\t\022\025\n\rmanifestation\030" +
-      "\014 \001(\t\0225\n\003poi\030\r \001(\0132(.it.sayservice.platf" +
-      "orm.core.message.POI\022\021\n\tshortDesc\030\016 \001(\t\022",
-      "\017\n\007keyword\030\017 \001(\t"
+      "\022\014\n\004city\030\005 \002(\t\"\330\002\n\007TCEvent\022\n\n\002id\030\001 \002(\t\022\r" +
+      "\n\005title\030\002 \002(\t\022\020\n\010dateFrom\030\003 \003(\t\022\016\n\006dateT",
+      "o\030\004 \003(\t\022\r\n\005place\030\005 \002(\t\022\014\n\004city\030\006 \002(\t\022\014\n\004" +
+      "time\030\007 \002(\t\022\017\n\007address\030\010 \001(\t\022\020\n\010category\030" +
+      "\t \001(\t\022\017\n\007details\030\n \001(\t\022\013\n\003tel\030\013 \001(\t\022\013\n\003f" +
+      "ax\030\014 \001(\t\022\014\n\004mail\030\r \001(\t\022\013\n\003www\030\016 \001(\t\022\r\n\005p" +
+      "rice\030\017 \001(\t\022\024\n\014organization\030\020 \001(\t\022\r\n\005note" +
+      "s\030\021 \001(\t\0225\n\003poi\030\022 \001(\0132(.it.sayservice.pla" +
+      "tform.core.message.POI\022\021\n\teventDate\030\023 \001(" +
+      "\t\"\314\001\n\016EventDescrList\022X\n\005event\030\001 \003(\0132I.eu" +
+      ".trentorise.smartcampus.services.trento." +
+      "events.data.message.EventDescr\022`\n\rmanife",
+      "station\030\002 \003(\0132I.eu.trentorise.smartcampu" +
+      "s.services.trento.events.data.message.Ev" +
+      "entDescr\">\n\nEventDescr\022\014\n\004href\030\001 \002(\t\022\017\n\007" +
+      "keyword\030\002 \002(\t\022\021\n\tshortDesc\030\003 \002(\t\"\221\002\n\005Eve" +
+      "nt\022\n\n\002id\030\001 \002(\t\022\r\n\005title\030\002 \002(\t\022\014\n\004date\030\003 " +
+      "\002(\t\022\r\n\005place\030\004 \002(\t\022\014\n\004time\030\005 \002(\t\022\017\n\007cont" +
+      "ent\030\006 \001(\t\022\022\n\nlastUpdate\030\010 \001(\t\022\013\n\003img\030\t \001" +
+      "(\t\022\020\n\010district\030\n \001(\t\022\014\n\004cost\030\013 \001(\t\022\025\n\rma" +
+      "nifestation\030\014 \001(\t\0225\n\003poi\030\r \001(\0132(.it.says" +
+      "ervice.platform.core.message.POI\022\021\n\tshor",
+      "tDesc\030\016 \001(\t\022\017\n\007keyword\030\017 \001(\t"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -6825,7 +6927,7 @@ public final class Events {
           internal_static_eu_trentorise_smartcampus_services_trento_events_data_message_TCEvent_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_eu_trentorise_smartcampus_services_trento_events_data_message_TCEvent_descriptor,
-              new java.lang.String[] { "Title", "DateFrom", "DateTo", "Place", "City", "Time", "Address", "Category", "Details", "Tel", "Fax", "Mail", "Www", "Price", "Organization", "Notes", "Poi", "EventDate", },
+              new java.lang.String[] { "Id", "Title", "DateFrom", "DateTo", "Place", "City", "Time", "Address", "Category", "Details", "Tel", "Fax", "Mail", "Www", "Price", "Organization", "Notes", "Poi", "EventDate", },
               eu.trentorise.smartcampus.services.trento.events.data.message.Events.TCEvent.class,
               eu.trentorise.smartcampus.services.trento.events.data.message.Events.TCEvent.Builder.class);
           internal_static_eu_trentorise_smartcampus_services_trento_events_data_message_EventDescrList_descriptor =
